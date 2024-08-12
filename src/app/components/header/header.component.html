@@ -1,0 +1,38 @@
+<header>
+    <nav>
+      <ul class="left-nav">
+        <li>
+          <img src="https://archstonekenya.com/images/archstone_logo.png" alt="archstonekenya" class="logo">
+        </li>
+      </ul>
+      
+      <ul class="right-nav">
+        <li><a href="#">Buy</a></li>
+        <li><a href="#">Rent</a></li>
+        <li><a href="#"><fa-icon [icon]="faSearch"></fa-icon></a></li>
+        <li><a href="#" (click)="toggleLike()"><fa-icon [icon]="liked ? faHeart : farHeart"></fa-icon></a></li>
+        <li (click)="toggleMenu()"><a href="#"><fa-icon [icon]="faBars"></fa-icon></a></li>
+      </ul>
+    </nav>
+
+    <div class="dropdown-menu" [class.show]="menuOpen">
+      <button class="close-button"(click)="menuOpen = false">X</button>
+      <ul>
+        <li><a href="#">My favourites</a></li>
+        <li><a href="#">Buy with us</a></li>
+        <li><a href="#">Rent with us</a></li>
+        <li><a href="#">Editorial</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a href="https://www.twitter.com" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a>
+        <a href="https://www.instagram.com" target="_blank"><fa-icon [icon]="faInstagram"></fa-icon></a>
+        <a href="https://www.linkedin.com" target="_blank"><fa-icon [icon]="faLinkedin"></fa-icon></a> 
+      </div>
+    </div>
+    
+
+  </header>
+  

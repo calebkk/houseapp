@@ -1,0 +1,10 @@
+/* app.component.css */
+
+.app-container {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Adjust other styles as needed */
+  

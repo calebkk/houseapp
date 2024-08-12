@@ -1,0 +1,31 @@
+<div class="container">
+    <form [formGroup]="propertyForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Property Name</label>
+        <input id="name" formControlName="name" type="text" />
+      </div>
+  
+      <div>
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description"></textarea>
+      </div>
+  
+      <div>
+        <label for="price">Price</label>
+        <input id="price" formControlName="price" type="number" />
+      </div>
+  
+      <div>
+        <label for="location">Location</label>
+        <input id="location" formControlName="location" type="text" />
+      </div>
+  
+      <div>
+        <label for="images">Images</label>
+        <input id="images" type="file" (change)="onFileChange($event)" multiple />
+      </div>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

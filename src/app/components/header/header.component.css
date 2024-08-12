@@ -1,0 +1,139 @@
+/* header.component.css */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-bg);
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left-nav, .right-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.left-nav li img.logo {
+  max-height: 50px; /* Adjust based on your logo's dimensions */
+  max-width: 100%;  /* Ensure the image scales properly */
+}
+
+.right-nav li {
+  color: var(--primary-accent);
+  display: flex;
+  align-items: center;
+}
+
+.right-nav li a {
+  text-decoration: none;
+  color: var(--primary-accent);
+  font-weight: bold;
+}
+
+.right-nav li fa-icon {
+  cursor: pointer;
+  color: var(--primary-accent);
+}
+
+/* header.component.css */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-bg);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left-nav, .right-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.left-nav li img.logo {
+  max-height: 50px; /* Adjust based on your logo's dimensions */
+  max-width: 100%;  /* Ensure the image scales properly */
+}
+
+.right-nav li {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav li a {
+  text-decoration: none;
+  color: var(--primary-accent); /* Use primary accent color */
+  font-weight: bold;
+}
+
+.right-nav li fa-icon {
+  cursor: pointer;
+  color: var(--primary-accent);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0px; /* Adjusted to reach the right corner */
+  top: 60px;
+  background-color: rgba(255,255,255,0.5); /* Adjusted for transparency */
+  width: 30%; /* Adjusted to stretch fully */
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 15px 20px; /* Increased from 10px to 15px */
+}
+
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: var(--primary-text);
+  display: flex; /* Adjusted for icon alignment */
+  align-items: center; /* This will vertically center align items */
+}
+
+.dropdown-menu ul li a:hover {
+  background-color: var(--primary-accent);
+  color: var(--secondary-text);
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around; /* This will evenly distribute the space */
+}
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+

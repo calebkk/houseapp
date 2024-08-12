@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* styles.css */
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap');
+
+/* Color Scheme */
+:root {
+  --secondary-bg: #F9F8F6;
+  --primary-accent: #027778;
+  --primary-bg: #FFFFFF;
+  --primary-text: #000000; 
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional global styles can go here */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing as needed */
+}
+
+.card {
+  width: 30%; /* Adjust card width as needed */
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  margin: 2px 0;
+  font-size: 14px;
+}
